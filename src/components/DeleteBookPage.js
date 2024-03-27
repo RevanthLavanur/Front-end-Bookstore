@@ -8,7 +8,7 @@ const DeleteBookPage = () => {
     const handleDeleteBook = async (e) => {
         e.preventDefault();
         try {
-            await axios.delete(`http://localhost:8080/api/books/${bookId}`);
+            await axios.delete(`http://boo-store-project-1.onrender.com/api/books/${bookId}`);
             alert('Book deleted successfully!');
             setBookId('');
         } catch (error) {

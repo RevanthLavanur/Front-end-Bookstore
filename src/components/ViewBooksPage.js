@@ -12,7 +12,7 @@ const ViewBooksPage = () => {
 
     const fetchBooks = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/api/books');
+            const response = await axios.get('http://boo-store-project-1.onrender.com/api/books');
             setBooks(response.data);
         } catch (error) {
             console.error('Error fetching books:', error);
