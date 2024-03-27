@@ -15,7 +15,7 @@ const UpdateBookPage = () => {
     setBookId(value);
     if (value) {
       try {
-        const response = await axios.get(`http://boo-store-project-1.onrender.com/api/books/${value}`);
+        const response = await axios.get(`https://boo-store-project-1.onrender.com/api/books/${value}`);
         const fetchedBook = response.data;
         setBook({
           title: fetchedBook.title,
