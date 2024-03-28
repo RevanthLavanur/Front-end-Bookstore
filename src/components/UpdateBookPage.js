@@ -41,7 +41,7 @@ const UpdateBookPage = () => {
   const handleUpdateBook = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:8080/api/books/${bookId}`, book);
+      const response = await axios.put(`https://boo-store-project-1.onrender.com/bookstore/api/books/${bookId}`, book);
       console.log('Book updated successfully:', response.data);
       // Show success alert
       alert('Book updated successfully');
