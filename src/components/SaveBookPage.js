@@ -11,7 +11,7 @@ const SaveBook = () => {
     const handleSaveBook = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://boo-store-project-1.onrender.com/api/books/save', { title, author, price,quantity });
+            await axios.post('https://boo-store-project-1.onrender.com/bookstore/api/books/save', { title, author, price,quantity });
             alert('Book saved successfully!');
             setTitle('');
             setAuthor('');
